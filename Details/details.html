@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./details.css">
+    <script src="./details.js" defer></script>
+    <link rel="shortcut icon" href="/Media/booksIcon.png" type="image/x-icon">
+    <title>Details</title>
+
+</head>
+
+<body>
+    <div class="cover">
+        <div class="book">
+            <label for="page-1" class="book__page book__page--1">
+                <img class="book_image" src="" alt="">
+            </label>
+
+            <label for="page-2" class="book__page book__page--4">
+                <div class="page__content">
+
+                    <div class="page__content-blockquote">
+                        <p class="page__content-blockquote-text description"></p>
+
+                    </div>
+                    <div class="page__number">3</div>
+                </div>
+            </label>
+
+            <!-- Resets the page -->
+            <input type="radio" name="page" id="page-1" />
+
+            <!-- Goes to the second page -->
+            <input type="radio" name="page" id="page-2" />
+            <label class="book__page book__page--2">
+                <div class="book__page-front">
+                    <div class="page__content">
+                        <h1 class="page__content-title rank"></h1>
+                        <h1 class="page__content-book-title title"></h1>
+                        <h2 class="page__content-author author"></h2>
+
+                        <p class="page__content-credits">
+                            Created by
+                            <span>Seckin Ozulku</span>
+                        </p>
+                        <div class="page__content-copyright">
+                            <p class="publisher"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="book__page-back">
+                    <div class="page__content">
+                        <h1 class="page__content-title-buy">Buy</h1>
+
+
+                        <div class="page__number">2</div>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ovo&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html , body {
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom right, #ffffff 0%, #666699 100%);
+  background-repeat: no-repeat;
+}
+
+.header-input {
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  color: hsl(225, 81%, 21%);
+  width: 345px;
+  margin: auto;
+}
+
+.best-seller-books {
+    width: 140px;
+    height: 28px;
+    color: black;
+    background: lightgrey;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.books-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background: #e0dede;
+  border: 1px solid #808080;
+  width: 350px;
+  height: 700px;
+  text-decoration: none;
+  color: hsl(225, 81%, 21%);
+  border-radius: 15px;
+}
+
+.rank {
+  width: 30px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: hsl(225, 81%, 21%);
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+
+.author, .title {
+  font-family: 'Merriweather', serif;
+  background-color: rgb(196, 208, 219);
+  border-radius: 15px;
+}
+
+.description {
+  font-family: 'Ovo', serif;
+  font-size: 1.3rem;
+}
+
+.books-container {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0;
+}
+
+.books-image {
+  width: 200px;
+  height: 300px;
+  transition: all .3s ease-in-out;
+  transform-origin: left center 0px;
+  transform-style: preserve-3d;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+
+.books-image:hover {
+  cursor: pointer;
+  transform: rotateY(-28deg) rotateZ(-2deg) scale(1.02);
+  box-shadow: 1px 3px 2px #353d85, 20px 8px 0 #525dc4;
+  /* transform: scale(1.02); */
+}
+
+.books-image:hover::after {
+  content: " ";
+  display: block;
+  opacity: 1;
+  width: 172px;
+  height: 255px;
+  position: relative;
+  left: 8px;
+  background: linear-gradient(-180deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.books-image:hover::before {
+  transform: translateY(9px);
+  opacity: 1;
+
+}
+
+.books-box {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 17px;
+  justify-content: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
